@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "ecs-mon/cmd"
+import "github.com/modernix/ecs-mon-go/cmd"
 
 func main() {
 	cmd.Execute()

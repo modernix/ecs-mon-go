@@ -152,10 +152,9 @@ func display(svc Service) {
 			})
 		}
 		for _, i := range svc.Tasks {
-			//fmt.Println(i)
 			var hostPort string
 			if len(i.Containers[0].NetworkBindings) == 0 {
-				hostPort = "N/A"
+				hostPort = "...?"
 			} else {
 				hostPort = strconv.FormatInt(*i.Containers[0].NetworkBindings[0].HostPort, 10)
 			}
